@@ -34,7 +34,7 @@ Die Methode ``sh.sun.pos()`` liefert die Position der Sonne und hat zwei optiona
 sh.sun.set()
 ~~~~~~~~~~~~
 
-Die Methode ``sh.sun.set()`` hat liefert den Zeitpunkt des nächsten Sonnenuntergangs und hat einen optionale Parameter:
+Die Methode ``sh.sun.set()`` liefert den Zeitpunkt des nächsten Sonnenuntergangs und hat einen optionalen Parameter:
 
 - Der Parameter ``offset`` ist der Offset zum Sonnenuntergang in Grad
   (eine negative Zahl gibt an, wieviel Grad die Sonne unter dem Horizont stehen soll)
@@ -54,7 +54,7 @@ Das Ergebnis ist ein auf UTC basierendes ``datetime`` Objekt
 sh.sun.rise()
 ~~~~~~~~~~~~~
 
-Die Methode ``sh.sun.rise()`` hat liefert den Zeitpunkt des nächsten Sonnenuntergangs und hat einen optionale Parameter:
+Die Methode ``sh.sun.rise()`` liefert den Zeitpunkt des nächsten Sonnenuntergangs und hat einen optionalen Parameter:
 
 - Der Parameter ``offset`` ist der Offset zum Sonnenuntergang in Grad
   (eine negative Zahl gibt an, wieviel Grad die Sonne unter dem Horizont stehen soll)
@@ -64,7 +64,7 @@ Das Ergebnis ist ein auf UTC basierendes ``datetime`` Objekt
 .. code-block:: python
    :caption: Beispiele zur Sonnenaufgangsberechnung
 
-   # sh.sun.rise(offset)  hierbei gibt offset die Differenz in Grad zum nächsten Sonnenaufganges an
+   # sh.sun.rise(offset)  hierbei gibt offset die Differenz in Grad zum nächsten Sonnenaufgang an
 
    sunrise = sh.sun.rise()      # liefert den utc-basierten Zeitpunkt des nächsten Sonnenaufganges
    sunrise_tw = sh.sun.rise(-6) # liefert den utc-basierten Zeitpunkt zu dem die Sonne wieder 6° unter
@@ -74,8 +74,6 @@ Das Ergebnis ist ein auf UTC basierendes ``datetime`` Objekt
 sh.moon
 -------
 
-Neben den drei Funktionen ``pos``, ``set`` und ``rise`` (wie beim Objekt ``sh.sun``) gibt es noch
-zwei weitere Funktionen:
 
 Neben den drei Funktionen ``sh.moon.pos()``, ``sh.moon.set()`` und ``sh.moon.rise()`` (analog zum ``sh.sun`` Objekt)
 stehen zwei weitere Funktionen (``sh.moon.light()`` und ``sh.moon.phase()``) zur Verfügung.
@@ -104,7 +102,7 @@ Die Methode ``sh.moon.pos()`` liefert die Position des Mondes und hat zwei optio
 sh.moon.set()
 ~~~~~~~~~~~~~
 
-Die Methode ``sh.moon.set()`` hat liefert den Zeitpunkt des nächsten Monduntergangs und hat einen optionale Parameter:
+Die Methode ``sh.moon.set()`` liefert den Zeitpunkt des nächsten Monduntergangs und hat einen optionalen Parameter:
 
 - Der Parameter ``offset`` ist der Offset zum Monduntergang in Grad
   (eine negative Zahl gibt an, wieviel Grad der Mond unter dem Horizont stehen soll)
@@ -123,7 +121,7 @@ Das Ergebnis ist ein auf UTC basierendes ``datetime`` Objekt
 sh.moon.rise()
 ~~~~~~~~~~~~~~
 
-Die Methode ``sh.moon.rise()`` hat liefert den Zeitpunkt des nächsten Monduntergangs und hat einen optionale Parameter:
+Die Methode ``sh.moon.rise()`` liefert den Zeitpunkt des nächsten Monduntergangs und hat einen optionalen Parameter:
 
 - Der Parameter ``offset`` ist der Offset zum Monduntergang in Grad
   (eine negative Zahl gibt an, wieviel Grad der Mond unter dem Horizont stehen soll)
@@ -133,7 +131,7 @@ Das Ergebnis ist ein auf UTC basierendes ``datetime`` Objekt
 .. code-block:: python
    :caption: Beispiele zur Mondaufgangsberechnung
 
-   # sh.moon.rise(offset)  hierbei gibt offset die Differenz in Grad zum nächsten Mondaufganges an
+   # sh.moon.rise(offset)  hierbei gibt offset die Differenz in Grad zum nächsten Mondaufgang an
 
    moonrise = sh.moon.rise()      # liefert den utc-basierten Zeitpunkt des nächsten Mondaufganges
    moonrise_tw = sh.moon.rise(-6) # liefert den utc-basierten Zeitpunkt zu dem der Mond wieder 6° unter
